@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "ms-vscode.live-server",
-    "ms-edgedevtools.vscode-edge-devtools"
+    "ms-edgedevtools.vscode-edge-devtools",
+    "koichisasada.vscode-rdbg"
   ]
 }
