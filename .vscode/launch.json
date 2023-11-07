@@ -1,6 +1,13 @@
 {
   "configurations": [
     {
+      "name": "Launch Bridgetown server",
+      "type": "ruby_lsp",
+      "request": "launch",
+      "url": "http://localhost:4000",
+      "program": "${workspaceRoot}/bin/bridgetown start"
+    },
+    {
       "type": "pwa-msedge",
       "name": "Launch Microsoft Edge",
       "request": "launch",
