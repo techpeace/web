@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Using Rails UJS Confirmations in Stimulus and StimulusReflex"
+title: Using Rails UJS Confirmations in Stimulus and StimulusReflex
+description: Learn how to add confirmation steps and trigger actions post-confirmation in your Rails & StimulusReflex applications.
 canonical_url: https://dev.to/techpeace/using-rails-ujs-confirmations-in-stimulus-and-stimulusreflex-4f6e
 date: 2023-09-21 11:52:06 -0400
 categories:
   - rails
-  - ruby
-  - javascript
-  - stimulus
+  - stimulus-reflex
 ---
 
 One of the many benefits of using the fantastic [StimulusReflex](https://stimulusreflex.com) has been a return to using the conventions of [Rails UJS](https://edgeguides.rubyonrails.org/working_with_javascript_in_rails.html#stoppable-events). Simply [appending a data attribute to an element to have it automatically disable itself during an interaction](https://edgeguides.rubyonrails.org/working_with_javascript_in_rails.html#automatic-disabling) is the type of magic that reminds me of first getting started with Rails.
