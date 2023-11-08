@@ -1,9 +1,35 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-{% capture resource_title %}{{ title | strip_html | strip_newlines }}{% endcapture %}
-<title>{% if resource_title != "Index" %}{{ resource_title | escape }} | {{ metadata.title | escape }}{% else %}{{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}</title>
+{% capture resource_title %}{{ data.title | strip_html | strip_newlines }}{% endcapture %}
+<title>
+  {% if resource_title != "Index" %}
+    {{ resource_title | escape }} | {{ metadata.title | escape }}
+  {% else %}
+    {{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}
+</title>
 
 <meta name="description" content="{{ metadata.description }}" />
+
+<!-- OG TAGS -->
+{% if data %}
+  {% if data.title %}
+    <meta property="og:title" content="{{ resource_title }}" />
+  {% endif %}
+  {% if data.description %}
+    <meta property="og:description" content="{{ data.description | strip_html | strip_newlines }}" />
+  {% endif %}
+  {% if data.url %}
+    <meta property="og:url" content="{{ data.url | absolute_url }}" />
+  {% endif %}
+  {% if data.share_image %}
+    <meta property="og:image" content="{{ data.share_image_url | absolute_url }}" />
+  {% endif %}
+{% endif %}
+
+<!-- CANONICAL URL -->
+{% if data.canonical_url %}
+  <link rel="canonical" href="{{ data.canonical_url | absolute_url }}" />
+{% endif %}
 
 <link rel="stylesheet" href="{% asset_path css %}" />
 <script src="{% asset_path js %}" defer></script>
