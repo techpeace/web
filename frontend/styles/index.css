@@ -20,7 +20,7 @@ body {
   line-height: 1.5;
 }
 
-a {
+ul.navbar a {
   color: var(--action-color);
   text-decoration: underline;
   text-decoration-color: #ffb088;

@@ -2,10 +2,12 @@
 layout: default
 ---
 
-<h1>{{ data.title }}</h1>
-
-<h1 class="text-3xl font-bold underline">
-    Hello world!
+<article class="prose prose-stone lg:prose-xl mx-auto">
+  <h1 class="text-3xl font-bold">
+    {{ data.title }}
   </h1>
 
-{{ content }}
+  <time datetime="{{ data.date | date: "%Y-%m-%d" }}" class="text-gray-500 italic">{{ data.date | date: "%b %d, %Y" }}</time>
+
+  {{ content }}
+</article>
