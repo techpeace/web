@@ -93,11 +93,3 @@ hr {
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
 }
-
-/* -------------
-   BLOG POSTS
-   =========== */
-
-body.post main p {
-  padding-top: 24px;
-}

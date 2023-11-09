@@ -4,7 +4,7 @@ title: Using Rails UJS Confirmations in Stimulus and StimulusReflex
 description: Learn how to add confirmation steps and trigger actions post-confirmation in your Rails & StimulusReflex applications.
 share_image_url: https://res.cloudinary.com/practicaldev/image/fetch/s--YlzgpH1P--/c_imagga_scale,f_auto,fl_progressive,h_500,q_66,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/to4uoqff39rmwdn07gf3.gif
 canonical_url: https://dev.to/techpeace/using-rails-ujs-confirmations-in-stimulus-and-stimulusreflex-4f6e
-date: 2023-09-21 11:52:06 -0400
+date: 2020-12-30 11:52:06 -0400
 categories:
   - rails
   - stimulus-reflex
