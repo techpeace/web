@@ -16,7 +16,7 @@ title: Blog
       {% for post in collections.posts.resources %}
 
         <article class="flex max-w-xl flex-col items-start justify-between bg-white shadow-xl !border-gray-400 rounded-lg group relative hover:bg-gray-200">
-          <div class="h-48 w-full bg-gray-200 flex flex-col-reverse justify-between items-end p-4 bg-cover bg-center rounded-t !border-top-gray-400 border-x-gray-400" style="background: url('{{ post.share_image_url }}'); background-size: cover;"></div>
+          <div class="h-48 w-full bg-gray-200 flex flex-col-reverse justify-between items-end p-4 bg-cover bg-center rounded-t-lg !border-top-gray-400 border-x-gray-400" style="background: url('{{ post.share_image_url }}'); background-size: cover;"></div>
           <div class="p-8 sm:p-4">
             <h3 class="mt-3 text-lg font-semibold leading-6 group-hover:underline">
               <a href="{{ post.relative_url }}">
