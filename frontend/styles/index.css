@@ -22,7 +22,6 @@ body {
 
 ul.navbar a {
   color: var(--action-color);
-  text-decoration: underline;
   text-decoration-color: #ffb088;
 }
 

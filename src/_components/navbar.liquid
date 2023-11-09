@@ -1,10 +1,23 @@
 <header>
   <h1>Matt Buck: Founder & Full-stack Engineer</h1>
+  {{ resource.relative_path }}
 </header>
 
 <nav>
   <ul class="navbar">
-    <li><a{% if resource.relative_url == "/" %} class="underline"{% endif %} href="{{ '/' | relative_url }}">Home</a></li>
-    <li><a{% if resource.relative_path contains "_posts" or resource.relative_path contains "blog" %} class="underline"{% endif %} href="{{ '/blog' | relative_url }}">Blog</a></li>
+    <li>
+      <a
+        {% if resource.relative_url == "/" %}
+        class="underline"
+        {% endif %}
+        href="{{ '/' | relative_url }}">Home</a>
+    </li>
+    <li>
+      <a
+        {% if resource.relative_path contains "_posts" or resource.relative_path contains "blog" %}
+        class="underline"
+        {% endif %}
+        href="{{ '/blog' | relative_url }}">Blog</a>
+    </li>
   </ul>
 </nav>
