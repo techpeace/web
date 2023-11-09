@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding a Voice Interface to a Web Application (Video)
-description: "Check out my short presentation on adding voice interface to a web app to enable speech, the most natural interface."
+description: "Check out my short presentation on adding a voice interface to a web app to enable speech: the most natural interface."
 share_image_url: https://uploads-ssl.webflow.com/6170359d525787cd986bc625/61d62dec9127114d0041bfd8_5e190f412b927ddcd7c9da13_give-voice-to-your-web-application.png
 canonical_url: https://www.voxable.io/blog/adding-a-voice-interface-to-a-web-application-video
 date: 2016-04-05 12:41:00 -0400

@@ -3,9 +3,11 @@ layout: default
 ---
 
 <article class="prose prose-stone lg:prose-xl mx-auto">
-  <h1 class="text-3xl font-bold underline">
+  <h1 class="text-3xl font-bold">
     {{ data.title }}
   </h1>
+
+  <time datetime="{{ data.date | date: "%Y-%m-%d" }}" class="text-gray-500 italic">{{ data.date | date: "%b %d, %Y" }}</time>
 
   {{ content }}
 </article>

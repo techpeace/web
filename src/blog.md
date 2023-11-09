@@ -7,7 +7,7 @@ title: Blog
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">That Web Muck</h2>
-      <p class="mt-2 text-lg leading-8 text-gray-600">Blog posts from Matt(hew) Buck. Sure to both 🤯 and 🤩 alike, in equal measure.
+      <p class="mt-2 text-lg leading-8 text-gray-600">Blog posts from Matt(hew) Buck. Sure to both 🤯 and 🤬 alike, in equal measure.
       </p>
     </div>
 
@@ -25,16 +25,18 @@ title: Blog
               </a>
             </h3>
 
-            <div class="flex items-center gap-x-4 text-xs">
-              <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+            <div class="flex items-center gap-x-4 text-xs py-4">
+              <time datetime="{{ post.data.date | date: "%Y-%m-%d" }}" class="text-gray-500">{{ post.data.date | date: "%b %d, %Y" }}</time>
+            </div>
 
+            <div class="flex items-center gap-x-4 text-xs">
               {% for category in post.data.categories %}
                 <a href="#" class="relative z-10 rounded-full bg-gray-200 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100 hover-group:bg-gray-100">{{ category }}</a>
               {% endfor %}
             </div>
 
             <div class="group relative">
-              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 z-10">
+              <p class="mt-5 line-clamp-4 text-sm leading-6 text-gray-600 z-10">
                 {{ post.data.description }}
               </p>
             </div>
